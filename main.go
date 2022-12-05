@@ -18,6 +18,7 @@ func main() {
 	router.GET("/api/v1/users/adult", controllers.FindAdults)
 	router.GET("/api/v1/users/:id", controllers.FindUser)
 	router.DELETE("/api/v1/users/:id", controllers.DeleteUser)
+	router.PATCH("/api/v1/users/:id", controllers.UpdateUser)
 
 	router.Run(":3000")
 }
